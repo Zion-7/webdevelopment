@@ -1,0 +1,118 @@
+html,
+body {
+  background-color: white;
+  margin: 0%;
+}
+
+.c {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #6070ff;
+  margin-right: 65%;
+  text-align: left;
+}
+
+.menu1 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+
+
+  justify-content: space-between;
+  z-index: 100%;
+}
+
+.menu-toggle {
+  margin: 5%;
+}
+
+.head {
+  margin: 5%;
+}
+
+.headline-title {
+  font-family: "Inter", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0.37px;
+  text-align: left;
+}
+
+.headline-paragraph {
+  display: inline-block;
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.headline-bolder {
+  display: inline-block;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #7f8cff;
+  text-align: left;
+}
+
+.headline-bolder :hover {
+  color: #6070ff;
+}
+
+.main3 {
+  text-align: left;
+  background-image: url(/img/back.svg);
+  background-size: cover;
+  padding: 5%;
+  margin-top: 5%;
+}
+
+.menu-toggle:hover {
+  color: #6070ff;
+}
+
+/* Mobile Skeleton */
+@media (min-width: 375px) {
+  .headline-container {
+    text-align: center;
+  }
+
+  .headline-title {
+    font-size: 32px;
+    line-height: 40px;
+    width: 100%;
+  }
+
+  .headline-paragraph,
+  .headline-bolder {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+  }
+
+  .headline-bolder {
+    text-align: left;
+  }
+
+  @media (max-width: 767px) {
+    .main3 {
+      background-size: 100% 100%;
+      padding: 10px;
+    }
+
+    .menu-toggle {
+      display: inline-block;
+      border: none;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    .menu-toggle {
+      display: none;
+    }
+  }
+}
